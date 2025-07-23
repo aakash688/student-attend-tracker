@@ -42,8 +42,8 @@ export const AttendanceTable = () => {
   const [attendanceData, setAttendanceData] = useState<AttendanceRecord[]>([]);
   const [selectedCell, setSelectedCell] = useState<{employeeId: string, date: string} | null>(null);
 
-  // Generate days for current month (simplified to 16 days as shown in image)
-  const days = Array.from({ length: 16 }, (_, i) => i + 1);
+  // Generate days for current month (31 days)
+  const days = Array.from({ length: 31 }, (_, i) => i + 1);
   const month = "July";
   const year = "2025";
 
